@@ -22,40 +22,40 @@
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <TextBlock FontSize="20" Grid.Column="0" Grid.ColumnSpan="2" Text="Калькулятор базового обмена веществ"  HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"/>
-        <TextBlock FontSize="16" Grid.Column="0" Grid.Row="1" Text="Возраст:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,100,0" Foreground="#FF454545"/>
-        <TextBlock FontSize="16" Grid.Column="0" Grid.Row="2" Text="Пол:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,100,20" Foreground="#FF454545"/>
-        <TextBlock FontSize="16" Grid.Column="0" Grid.Row="3" Text="Вес:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,100,40" Foreground="#FF454545"/>
-        <TextBlock FontSize="16" Grid.Column="0" Grid.Row="4" Text="Рост:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,100,0" Foreground="#FF454545"/>
-        <TextBlock FontSize="16" Grid.Column="0" Grid.Row="5" Text="Уровень расхода энергии:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="40,0,100,0" Foreground="#FF454545"/>
-        <TextBlock FontSize="16" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="6" Text="Варианты рассчета" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Foreground="#FF454545"/>
-        <TextBlock FontSize="16" Grid.Column="0" Grid.Row="7" Text="Результат в:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,100,15" Foreground="#FF454545"/>
-        <TextBlock FontSize="16" Grid.Column="0" Grid.Row="8" Text="Формула расчета:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,100,15" Foreground="#FF454545"/>
-        <Button x:Name="BtnRes" Content="Узнать результат" FontSize="16" Grid.Column="0" Grid.Row="9" VerticalAlignment="Center" HorizontalAlignment="Right" Padding="15 5" Background="{x:Null}" BorderThickness="2" Click="btnRes_Click"/>
-        <TextBox x:Name="BoxAge" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,0,0,0" Grid.Column="1" Grid.Row="1" Width="100" BorderThickness="2" Foreground="#FF454545" GotFocus="boxText_GotFocus" LostFocus="boxText_LostFocus"/>
+        <TextBlock Grid.Row="0" Text="Калькулятор базового обмена веществ" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Foreground="DimGray" Grid.ColumnSpan="3" FontWeight="Light"></TextBlock>
+        <TextBlock FontSize="16" Grid.Column="0" Grid.Row="1" Text="Возраст:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,100,0" Foreground="#FF454545" FontWeight="Light"/>
+        <TextBlock FontSize="16" Grid.Column="0" Grid.Row="2" Text="Пол:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,100,20" Foreground="#FF454545" FontWeight="Light"/>
+        <TextBlock FontSize="16" Grid.Column="0" Grid.Row="3" Text="Вес:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,100,40" Foreground="#FF454545" FontWeight="Light"/>
+        <TextBlock FontSize="16" Grid.Column="0" Grid.Row="4" Text="Рост:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,100,0" Foreground="#FF454545" FontWeight="Light"/>
+        <TextBlock FontSize="16" Grid.Column="0" Grid.Row="5" Text="Уровень расхода энергии:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="40,0,100,0" Foreground="#FF454545" FontWeight="Light"/>
+        <TextBlock FontSize="16" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="6" Text="Варианты рассчета" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Foreground="DimGray" FontWeight="Light"/>
+        <TextBlock FontSize="16" Grid.Column="0" Grid.Row="7" Text="Результат в:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,100,15" Foreground="#FF454545" FontWeight="Light"/>
+        <TextBlock FontSize="16" Grid.Column="0" Grid.Row="8" Text="Формула расчета:" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,100,15" Foreground="#FF454545" FontWeight="Light"/>
+        <Button x:Name="BtnRes" Content="Узнать результат" FontSize="16" Grid.Column="0" Grid.Row="9" VerticalAlignment="Center" HorizontalAlignment="Right" Padding="15 5" Background="{x:Null}" BorderThickness="2" Click="btnRes_Click" FontWeight="Light"/>
+        <TextBox x:Name="BoxAge" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,0,0,0" Grid.Column="1" Grid.Row="1" Width="100" BorderThickness="2" Foreground="#FF454545" GotFocus="boxText_GotFocus" LostFocus="boxText_LostFocus" FontWeight="Light"/>
         <StackPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,0">
-            <RadioButton GroupName="rbGender" x:Name="RbGenderM" Content="мужской" IsChecked="True" />
-            <RadioButton GroupName="rbGender" Content="женский" x:Name="RbGenderF" Margin="0,5,0,0"/>
+            <RadioButton GroupName="rbGender" x:Name="RbGenderM" Content="мужской" IsChecked="True" FontWeight="Light"/>
+            <RadioButton GroupName="rbGender" Content="женский" x:Name="RbGenderF" Margin="0,5,0,0" FontWeight="Light"/>
         </StackPanel>
         <StackPanel Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,0">
-            <TextBox x:Name="BoxWeight" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0" Grid.Column="1" Grid.Row="1" Width="100" BorderThickness="2" Foreground="#FF454545"/>
-            <RadioButton GroupName="rbWeight" x:Name="RbWeightFunt" Content="фунты" IsChecked="True" />
-            <RadioButton GroupName="rbWeight" x:Name="RbWeightKg" Content="килограммы" Margin="0,5,0,0" />
+            <TextBox x:Name="BoxWeight" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0" Grid.Column="1" Grid.Row="1" Width="100" BorderThickness="2" Foreground="#FF454545" FontWeight="Light"/>
+            <RadioButton GroupName="rbWeight" x:Name="RbWeightFunt" Content="фунты" IsChecked="True" FontWeight="Light"/>
+            <RadioButton GroupName="rbWeight" x:Name="RbWeightKg" Content="килограммы" Margin="0,5,0,0" FontWeight="Light"/>
         </StackPanel>
-        <TextBox x:Name="BoxHeight" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,0,0,0" Grid.Column="1" Grid.Row="4" Width="100" BorderThickness="2" Foreground="#FF454545" GotFocus="boxText_GotFocus" LostFocus="boxText_LostFocus"/>
-        <ComboBox Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" Margin="0,0" x:Name="CbEnergy">
+        <TextBox x:Name="BoxHeight" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,0,0,0" Grid.Column="1" Grid.Row="4" Width="100" BorderThickness="2" Foreground="#FF454545" GotFocus="boxText_GotFocus" LostFocus="boxText_LostFocus" FontWeight="Light"/>
+        <ComboBox Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" Margin="0,0" x:Name="CbEnergy" FontWeight="Light">
             <ComboBoxItem>Малоподвижный образ жизни</ComboBoxItem>
             <ComboBoxItem>Умеренно активный образ жизни</ComboBoxItem>
             <ComboBoxItem>Высокий образ жизни</ComboBoxItem>
             <ComboBoxItem>Очень высокий образ жизни</ComboBoxItem>
         </ComboBox>
         <StackPanel Grid.Row="7" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,0">
-            <RadioButton GroupName="rbVar" x:Name="RbVarKal" Content="калории" IsChecked="True" />
-            <RadioButton GroupName="rbVar" x:Name="RbVarDj" Content="килоджоули" Margin="0,5,0,0"/>
+            <RadioButton GroupName="rbVar" x:Name="RbVarKal" Content="калории" IsChecked="True" FontWeight="Light"/>
+            <RadioButton GroupName="rbVar" x:Name="RbVarDj" Content="килоджоули" Margin="0,5,0,0" FontWeight="Light"/>
         </StackPanel>
         <StackPanel Grid.Row="8" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,0">
-            <RadioButton GroupName="rbForm" x:Name="RbFormMafDj" Content="Маффин-Джеор" IsChecked="True" />
-            <RadioButton GroupName="rbForm" x:Name="RbFormHarBen" Content="Харрис-Бенедикт" Margin="0,5,0,0"/>
+            <RadioButton GroupName="rbForm" x:Name="RbFormMafDj" Content="Маффин-Джеор" IsChecked="True" FontWeight="Light"/>
+            <RadioButton GroupName="rbForm" x:Name="RbFormHarBen" Content="Харрис-Бенедикт" Margin="0,5,0,0" FontWeight="Light"/>
         </StackPanel>
     </Grid>
 </Window>
